@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Star Wars Fan App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <nav class="navbar navbar-default navbar-fixed-top navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <img src="#" alt="logo-sw">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#news">Next film<span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#resources">Resources</a>
+                        </li>
+                    </ul>
+                    <form class="form-inline my-2 my-lg-0">
+                        <!--<input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">-->
+                        <div class="btn btn-outline-success my-2 my-sm-0" type="submit"><a href="login.html">Login</a></div>
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <div id="news" class="countdown">
+            <div id="main">
+                <table class="countdownContainer">
+                    <tr class="christmas">
+                        <td colspan="4">Are you ready?</td>
+                    </tr>
+                    <tr class="counter christmas">
+                        <td id="days">120</td>
+                        <td id="hours">4</td>
+                        <td id="minutes">12</td>
+                        <td id="seconds">22</td>
+                    </tr>
+                    <tr>
+                        <td>Days</td>
+                        <td>Hours</td>
+                        <td>Minutes</td>
+                        <td>Seconds</td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+        <div id="resources">
+            <h1>Resources</h1>
+            <h4>Explore by</h4><br>
+            <ul class="row menu">
+                <li class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
+                    <a href="#people" class="btn btn-dark">People</a>
+                </li>
+                <li class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
+                    <a href="#planets" class="btn btn-dark">Planets</a>
+                </li>
+                <li class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
+                    <a href="#films" class="btn btn-dark">Films</a>
+                </li>
+                <li class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
+                    <a href="#species" class="btn btn-dark">Species</a>
+                </li>
+                <li class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
+                    <a href="#vehicles" class="btn btn-dark">Vehicles</a>
+                </li>
+                <li class="col-xl-2 col-lg-2 col-md-2 col-sm-4 col-6">
+                    <a href="#starships" class="btn btn-dark">Starships</a>
+                </li>
+            </ul>
+        </div>
+        <main>
+            <div class="loader hide"></div>
+            <div class="content">
+                <ul class="list-group list-group-flush"></ul>
+            </div>
+
+            <!-- Modal to show details -->
+            <div id="detail-modal" class="modal" tabindex="-1" role="dialog">
+                <div class="modal-dialog" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body"></div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <script src="./js/jquery-3.3.1.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="js/bootstrap.bundle.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <!-- <script src="js/bootstrap.bundle.min.js.map"></script>
+        <script src="js/bootstrap.min.js.map"></script> -->
+        <script src="./js/script.js"></script>
+    </div>
+</body>
+</html>
